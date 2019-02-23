@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/bry/static/js/runtime~main.4006ce33.js"
   },
   {
-    "revision": "4fe2f9acc4f13241212b",
-    "url": "/bry/static/js/main.4fe2f9ac.chunk.js"
+    "revision": "fa223a9a205abde6a657",
+    "url": "/bry/static/js/main.fa223a9a.chunk.js"
   },
   {
-    "revision": "c88c70e5f4ff8bea6fac",
-    "url": "/bry/static/js/2.c88c70e5.chunk.js"
+    "revision": "5bf9b2cda7c63b962686",
+    "url": "/bry/static/js/2.5bf9b2cd.chunk.js"
   },
   {
-    "revision": "4fe2f9acc4f13241212b",
+    "revision": "fa223a9a205abde6a657",
     "url": "/bry/static/css/main.911a5eaf.chunk.css"
   },
   {
-    "revision": "4bff4e6a96737e7ffe9b783a423b6cb0",
+    "revision": "c96e9b2c40c6930df50aa008c9bbe4a0",
     "url": "/bry/index.html"
   }
 ];

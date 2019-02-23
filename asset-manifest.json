@@ -1,13 +1,13 @@
 {
   "main.css": "/bry/static/css/main.911a5eaf.chunk.css",
-  "main.js": "/bry/static/js/main.4fe2f9ac.chunk.js",
-  "main.js.map": "/bry/static/js/main.4fe2f9ac.chunk.js.map",
+  "main.js": "/bry/static/js/main.fa223a9a.chunk.js",
+  "main.js.map": "/bry/static/js/main.fa223a9a.chunk.js.map",
   "runtime~main.js": "/bry/static/js/runtime~main.4006ce33.js",
   "runtime~main.js.map": "/bry/static/js/runtime~main.4006ce33.js.map",
-  "static/js/2.c88c70e5.chunk.js": "/bry/static/js/2.c88c70e5.chunk.js",
-  "static/js/2.c88c70e5.chunk.js.map": "/bry/static/js/2.c88c70e5.chunk.js.map",
+  "static/js/2.5bf9b2cd.chunk.js": "/bry/static/js/2.5bf9b2cd.chunk.js",
+  "static/js/2.5bf9b2cd.chunk.js.map": "/bry/static/js/2.5bf9b2cd.chunk.js.map",
   "index.html": "/bry/index.html",
-  "precache-manifest.eaa23c66fda3012f8e294c7226daaf82.js": "/bry/precache-manifest.eaa23c66fda3012f8e294c7226daaf82.js",
+  "precache-manifest.74250703ebe04257be2be6310fdc50d9.js": "/bry/precache-manifest.74250703ebe04257be2be6310fdc50d9.js",
   "service-worker.js": "/bry/service-worker.js",
   "static/css/main.911a5eaf.chunk.css.map": "/bry/static/css/main.911a5eaf.chunk.css.map",
   "static/media/logo.svg": "/bry/static/media/logo.5d5d9eef.svg"
