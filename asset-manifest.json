@@ -1,14 +1,14 @@
 {
-  "main.css": "/bry/static/css/main.911a5eaf.chunk.css",
-  "main.js": "/bry/static/js/main.440505e6.chunk.js",
-  "main.js.map": "/bry/static/js/main.440505e6.chunk.js.map",
+  "main.css": "/bry/static/css/main.344e14c7.chunk.css",
+  "main.js": "/bry/static/js/main.0a86b5ee.chunk.js",
+  "main.js.map": "/bry/static/js/main.0a86b5ee.chunk.js.map",
   "runtime~main.js": "/bry/static/js/runtime~main.4006ce33.js",
   "runtime~main.js.map": "/bry/static/js/runtime~main.4006ce33.js.map",
-  "static/js/2.c88c70e5.chunk.js": "/bry/static/js/2.c88c70e5.chunk.js",
-  "static/js/2.c88c70e5.chunk.js.map": "/bry/static/js/2.c88c70e5.chunk.js.map",
+  "static/js/2.57369828.chunk.js": "/bry/static/js/2.57369828.chunk.js",
+  "static/js/2.57369828.chunk.js.map": "/bry/static/js/2.57369828.chunk.js.map",
   "index.html": "/bry/index.html",
-  "precache-manifest.d04ea7657ab4c16ec1fbc3e49468d362.js": "/bry/precache-manifest.d04ea7657ab4c16ec1fbc3e49468d362.js",
+  "precache-manifest.c7ac727be82bb6ceb76874f2b1931cd8.js": "/bry/precache-manifest.c7ac727be82bb6ceb76874f2b1931cd8.js",
   "service-worker.js": "/bry/service-worker.js",
-  "static/css/main.911a5eaf.chunk.css.map": "/bry/static/css/main.911a5eaf.chunk.css.map",
-  "static/media/logo.svg": "/bry/static/media/logo.5d5d9eef.svg"
+  "static/css/main.344e14c7.chunk.css.map": "/bry/static/css/main.344e14c7.chunk.css.map",
+  "static/media/App.css": "/bry/static/media/bluesale-webfont.9f93a557.woff"
 }
