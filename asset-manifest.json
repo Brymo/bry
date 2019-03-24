@@ -1,14 +1,18 @@
 {
-  "main.css": "/bry/static/css/main.28731da2.chunk.css",
-  "main.js": "/bry/static/js/main.9ee9570b.chunk.js",
-  "main.js.map": "/bry/static/js/main.9ee9570b.chunk.js.map",
-  "runtime~main.js": "/bry/static/js/runtime~main.4006ce33.js",
-  "runtime~main.js.map": "/bry/static/js/runtime~main.4006ce33.js.map",
-  "static/js/2.57369828.chunk.js": "/bry/static/js/2.57369828.chunk.js",
-  "static/js/2.57369828.chunk.js.map": "/bry/static/js/2.57369828.chunk.js.map",
+  "main.css": "/bry/static/css/main.21598560.chunk.css",
+  "main.js": "/bry/static/js/main.a78e63fe.chunk.js",
+  "main.js.map": "/bry/static/js/main.a78e63fe.chunk.js.map",
+  "runtime~main.js": "/bry/static/js/runtime~main.ddf08eb5.js",
+  "runtime~main.js.map": "/bry/static/js/runtime~main.ddf08eb5.js.map",
+  "static/css/2.9b2564bb.chunk.css": "/bry/static/css/2.9b2564bb.chunk.css",
+  "static/js/2.0f9d3cdc.chunk.js": "/bry/static/js/2.0f9d3cdc.chunk.js",
+  "static/js/2.0f9d3cdc.chunk.js.map": "/bry/static/js/2.0f9d3cdc.chunk.js.map",
   "index.html": "/bry/index.html",
-  "precache-manifest.eaad2f48d492b2c72b92aa741bb9abf9.js": "/bry/precache-manifest.eaad2f48d492b2c72b92aa741bb9abf9.js",
+  "precache-manifest.bda8737668d66ea98bab11163438919c.js": "/bry/precache-manifest.bda8737668d66ea98bab11163438919c.js",
   "service-worker.js": "/bry/service-worker.js",
-  "static/css/main.28731da2.chunk.css.map": "/bry/static/css/main.28731da2.chunk.css.map",
-  "static/media/App.css": "/bry/static/media/bluesale-webfont.9f93a557.woff"
+  "static/css/2.9b2564bb.chunk.css.map": "/bry/static/css/2.9b2564bb.chunk.css.map",
+  "static/css/main.21598560.chunk.css.map": "/bry/static/css/main.21598560.chunk.css.map",
+  "static/media/App.css": "/bry/static/media/DAYROM.b03a9848.woff",
+  "static/media/components.css": "/bry/static/media/coolvetica rg.247ed841.woff",
+  "static/media/fancy_me.jpg": "/bry/static/media/fancy_me.58843230.jpg"
 }
