@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "247ed841f002fd9c6b68b7ca3a0b64ac",
-    "url": "/bry/static/media/coolvetica rg.247ed841.woff"
+    "revision": "b03a9848775c7d88a95710c5a9487f11",
+    "url": "/bry/static/media/DAYROM.b03a9848.woff"
   },
   {
-    "revision": "497d249ff8af442cce4c",
+    "revision": "eec642049396c8762741",
     "url": "/bry/static/css/main.18e88a37.chunk.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/bry/static/js/2.d8a98d65.chunk.js"
   },
   {
-    "revision": "b03a9848775c7d88a95710c5a9487f11",
-    "url": "/bry/static/media/DAYROM.b03a9848.woff"
+    "revision": "247ed841f002fd9c6b68b7ca3a0b64ac",
+    "url": "/bry/static/media/coolvetica rg.247ed841.woff"
   },
   {
-    "revision": "497d249ff8af442cce4c",
-    "url": "/bry/static/js/main.7b9986d0.chunk.js"
+    "revision": "eec642049396c8762741",
+    "url": "/bry/static/js/main.4794517d.chunk.js"
   },
   {
     "revision": "a6af7c0a2d4472dad47f3b05651fa720",
@@ -36,15 +36,15 @@ self.__precacheManifest = [
     "url": "/bry/static/media/fancy_me.58843230.jpg"
   },
   {
-    "revision": "9b15213790c87a00e586bd6ff76eabec",
-    "url": "/bry/static/media/mrx.9b152137.md"
+    "revision": "78211e6b8f8d743d0ec3390f28626bef",
+    "url": "/bry/static/media/mrx.78211e6b.md"
   },
   {
     "revision": "2aea2c7d48582ad07268",
     "url": "/bry/static/css/2.9b2564bb.chunk.css"
   },
   {
-    "revision": "ab09b0c6bde15e55c5be73eab1d61a71",
+    "revision": "d0fabbd82a2d501dcd249f3925c316d5",
     "url": "/bry/index.html"
   }
 ];
