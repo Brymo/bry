@@ -1,0 +1,153 @@
+.main{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height: 100%;
+    border-right-width: 0.1em;
+    border-right-color: gold;
+    border-right-style: dotted;
+}
+
+.nameComponent{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 2%;
+    width: 100%;
+    height:95%;
+
+    text-align: center
+}
+
+.bigName{
+    font-family: 'DAYROM';
+    font-size: 8em;
+}
+
+.smallName{
+    font-family: 'DAYROM';
+    font-size: 4em;
+}
+
+.nav{
+    width: 30%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItemContainer{
+    width:100%;
+    height: 25%;
+}
+
+.navitem{
+    width:100%;
+    text-align: right;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background: white;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    transition-property: background, color; 
+    transition-duration: 0.15s;
+}
+
+
+.navitem:hover{
+    background:gold;
+    color: white;
+    
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.blog .title{
+    font-family: Coolvetica;
+    font-size: 4em;
+    color: #1F1F1F;
+}
+
+.blogtext{
+    font-family: Coolvetica;
+    font-size: 1.5em;
+    white-space: pre-wrap;
+    color: #1F1F1F
+}
+
+.blog .date{
+    font-family: Coolvetica;
+    font-size: 1em;
+    color: lightgrey;
+    margin-top:-1.1em;
+    margin-bottom: 1.5em;
+}
+
+img{
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+
+.bbar{
+    display:flex;
+    justify-content: flex-start;
+    height: 5%;
+}
+
+.button{
+    margin-top: 0.25em;
+    margin-left: 0.3em;
+
+}
+
+
+.dNavContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: -1px;
+    background-color: white;
+}
+
+.dNavContainer .alive{
+    cursor: pointer;
+    transition-property: color; 
+    transition-duration: 0.15s;
+}
+
+.dNavContainer .item:hover{
+    color:#1F1F1F;
+}
+
+.dNavContainer .item{
+    font-family: 'DAYROM';
+    font-size: 1.5em;
+}
+
+@font-face {
+    font-family: 'DAYROM';
+    src: url('../fonts/DAYROM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../fonts/coolvetica rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
