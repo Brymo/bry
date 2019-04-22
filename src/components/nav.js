@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './components.css';
-import About from "./about"
-import Cooked from "./cooked"
+import NavItem from './navItem.js'
+
 
 class Nav extends Component {
 
@@ -12,14 +12,10 @@ class Nav extends Component {
     return (
       <div className="nav">
         
-        <About latestPost = {latestPost === "aboutme"}/>
-        <Cooked  latestPost = {latestPost === "cooked"}/>
-        <div className="smallName navitem navsleep">
-            PVCE
-        </div>
-        <div className="smallName navitem navsleep">
-            Teaching
-        </div>
+        <NavItem category="About Me" drawTitle="About Me - A story about me "latestPost = {latestPost === "About Me"}/>
+        <NavItem category="Cooked" drawTitle="Cooked - A story about food "latestPost = {latestPost === "Cooked"}/>
+        <NavItem category="Places" drawTitle="Places - And other spaces I've been "latestPost = {latestPost === "Places"}/>
+        <NavItem category="Code" drawTitle="Code - Things I've tinkered"latestPost = {latestPost === "Code"}/>
         
       </div>
     )

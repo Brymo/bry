@@ -20,7 +20,7 @@ class App extends Component {
   componentWillMount(){
         
     (async () => {
-      const folderNames = ["aboutme","cooked","places","code"];
+      const folderNames = ["About Me","Cooked","Places","Code"];
       let newestPost = {newestName:null, newestDate:-1};
 
       let i = 0;
