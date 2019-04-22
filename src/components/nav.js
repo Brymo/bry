@@ -9,6 +9,9 @@ class Nav extends Component {
   render() {
     
     const {latestPost} = this.props;
+    
+
+
     return (
       <div className="nav">
         
