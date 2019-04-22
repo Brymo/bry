@@ -66,16 +66,27 @@ class App extends Component {
     return parseInt(dayMonthYear[2],10)*10000 + parseInt(dayMonthYear[1],10) * 100 + parseInt(dayMonthYear[0],10)
   }
 
+  grabFile =  async (index, folderName) => {
+    const Octokit = require('@octokit/rest');
+    const octokit = new Octokit();
+    const stuff = await octokit.repos.getContents({
+      owner:"Brymo",
+      repo:"bry",
+      path:`./src/blogs/${folderName}/${folderName}${index}.md`
+    })
+    const content = await Buffer.from(stuff.data.content,'Base64').toString();
+    return content;
+  }
+
   getLatestPostDate =  async (folderName) => {
     let i = 0;
-    let readmePath = null;
+    let grabbedText = null;
     let fileExists = true;
 
     //find the latest post in the folder
     while(fileExists === true){
       try {
-        readmePath = require(`./blogs/${folderName}/${folderName}${i}.md`);
-        fetch(readmePath)
+        grabbedText = await this.grabFile(i, folderName);
         i++;
       } catch (e) {
         fileExists = false;
@@ -88,10 +99,8 @@ class App extends Component {
     }
 
     //fetch date from latest file
-    readmePath = await require(`./blogs/${folderName}/${folderName}${i-1}.md`);
-    const data = await fetch(readmePath);
-    const text = await data.text();
-    const date = await this.getDate(text);
+    grabbedText = await this.grabFile(i-1,folderName);
+    const date = await this.getDate(grabbedText);
     return date;
 
   }
