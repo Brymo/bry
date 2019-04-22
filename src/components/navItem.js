@@ -25,7 +25,7 @@ class NavItem extends Component {
 
   componentWillMount() {
     this.startLoad();
-
+    const {category} = this.props;
 
     (async () => {
       let readmePath = null;
@@ -34,12 +34,15 @@ class NavItem extends Component {
       let allBlogs = [];
 
       while (fileExists) {
-        console.log(i);
         try {
-          const grabbedtext = await this.grabFile(i);
-          const formattedText = await this.format(grabbedtext);
-          console.log(formattedText);
-          allBlogs.push(formattedText);
+          readmePath = require(`../blogs/${category}/${category}${i}.md`);
+          await fetch(readmePath)
+            .then(response => response.text())
+            .then(text => {
+            
+              allBlogs.push(this.format(text));
+     
+            });
           i++;
         } catch (e) {
           fileExists = false;
@@ -47,25 +50,11 @@ class NavItem extends Component {
         }
       }
 
-      
       this.setState({ terms: allBlogs,articleId:i-1 });
 
       this.stopLoad();
 
     })();
-  }
-
-  grabFile =  async (index) => {
-    const {category} = this.props;
-    const Octokit = require('@octokit/rest');
-    const octokit = new Octokit();
-    const stuff = await octokit.repos.getContents({
-      owner:"Brymo",
-      repo:"bry",
-      path:`./src/blogs/${category}/${category}${index}.md`
-    })
-    const content = await Buffer.from(stuff.data.content,'Base64').toString();
-    return content;
   }
 
   noArticles = () => {
