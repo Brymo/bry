@@ -24,7 +24,7 @@ class About extends Component {
   };
 
   componentWillMount() {
-    const { terms } = this.state;
+
     this.startLoad();
 
     (async () => {
@@ -46,7 +46,7 @@ class About extends Component {
           i++;
         } catch (e) {
           fileExists = false;
-          console.log(e);
+          //console.log(e);
         }
       }
 

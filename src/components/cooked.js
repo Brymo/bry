@@ -24,7 +24,6 @@ class Cooked extends Component {
   };
 
   componentWillMount() {
-    const { terms } = this.state;
     this.startLoad();
 
     (async () => {
@@ -35,7 +34,7 @@ class Cooked extends Component {
 
       while (fileExists) {
         try {
-          readmePath = require(`../blogs/cooked_blogs/cooked${i}.md`);
+          readmePath = require(`../blogs/cooked/cooked${i}.md`);
           await fetch(readmePath)
             .then(response => response.text())
             .then(text => {
@@ -46,7 +45,7 @@ class Cooked extends Component {
           i++;
         } catch (e) {
           fileExists = false;
-          console.log(e);
+          //console.log(e);
         }
       }
 
@@ -116,13 +115,12 @@ class Cooked extends Component {
 
   render() {
     const { terms, articleId, loading } = this.state;
-
-
-    const pic = require("../pics/mrx.jpg");
+    const {latestPost} = this.props;
     return (
       <div className="navItemContainer">
         <button className="smallName navitem" onClick={this.showDrawer}>
           Cooked
+          {latestPost?<sup>new</sup>:""}
         </button>
         <Drawer
           title="Cooked - A story about food"

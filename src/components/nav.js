@@ -5,17 +5,15 @@ import Cooked from "./cooked"
 
 class Nav extends Component {
 
-  constructor(props){
-    super(props);
-  }
 
   render() {
-
-    //const {caption} = this.state;
+    
+    const {latestPost} = this.props;
     return (
       <div className="nav">
-        <About/>
-        <Cooked/>
+        
+        <About latestPost = {latestPost}/>
+        <Cooked  latestPost = {latestPost}/>
         <div className="smallName navitem">
             PVCE
         </div>

@@ -1,7 +1,7 @@
-import React, { component } from "react";
+import React from "react";
 import "./components.css";
-import { configConsumerProps } from "antd/lib/config-provider";
-import Nav from "./nav";
+
+;
 
 export default function DrawNav(props) {
   const { nextArticle, prevArticle, prevNext } = props;
