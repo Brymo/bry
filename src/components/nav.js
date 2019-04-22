@@ -14,10 +14,10 @@ class Nav extends Component {
         
         <About latestPost = {latestPost === "aboutme"}/>
         <Cooked  latestPost = {latestPost === "cooked"}/>
-        <div className="smallName navitem">
+        <div className="smallName navitem navsleep">
             PVCE
         </div>
-        <div className="smallName navitem">
+        <div className="smallName navitem navsleep">
             Teaching
         </div>
         
