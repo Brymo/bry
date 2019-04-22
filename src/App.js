@@ -106,6 +106,8 @@ class App extends Component {
         <Spin size="large" />
       </div>)
     }
+
+    console.log(latest);
       
     return (
       <div className="content">

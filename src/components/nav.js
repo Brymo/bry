@@ -12,8 +12,8 @@ class Nav extends Component {
     return (
       <div className="nav">
         
-        <About latestPost = {latestPost}/>
-        <Cooked  latestPost = {latestPost}/>
+        <About latestPost = {latestPost === "aboutme"}/>
+        <Cooked  latestPost = {latestPost === "cooked"}/>
         <div className="smallName navitem">
             PVCE
         </div>

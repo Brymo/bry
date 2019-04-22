@@ -116,11 +116,13 @@ class About extends Component {
 
   render() {
     const { terms, articleId, loading } = this.state;
+    const {latestPost} = this.props;
 
     return (
       <div className="navItemContainer">
         <button className="smallName navitem" onClick={this.showDrawer}>
           About Me
+          {latestPost?<sup>new</sup>:""}
         </button>
         <Drawer
           title="Who am I?"

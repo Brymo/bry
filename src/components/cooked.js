@@ -120,6 +120,7 @@ class Cooked extends Component {
       <div className="navItemContainer">
         <button className="smallName navitem" onClick={this.showDrawer}>
           Cooked
+          {console.log(latestPost)}
           {latestPost?<sup>new</sup>:""}
         </button>
         <Drawer
