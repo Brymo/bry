@@ -66,7 +66,7 @@ class App extends Component {
   grabFile = async (index, folderName) => {
     const Octokit = require("@octokit/rest");
     const octokit = new Octokit({
-      userAgent: "Midnight Laundryoctokit/rest.js v16.25.0",
+      userAgent: "octokit/rest.js v16.25.0",
       auth: "99eece022093681ddd1f31f2e2cf341bdd5061a2"
     });
     const stuff = await octokit.repos.getContents({
