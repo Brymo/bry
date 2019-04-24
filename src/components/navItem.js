@@ -58,7 +58,7 @@ class NavItem extends Component {
   grabFile =  async (index) => {
     const {category} = this.props;
     const Octokit = require('@octokit/rest');
-    const octokit = new Octokit();
+    const octokit = new Octokit({userAgent:'Midnight Laundry'});
     const stuff = await octokit.repos.getContents({
       owner:"Brymo",
       repo:"bry",

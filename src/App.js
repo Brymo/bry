@@ -68,7 +68,7 @@ class App extends Component {
 
   grabFile =  async (index, folderName) => {
     const Octokit = require('@octokit/rest');
-    const octokit = new Octokit();
+    const octokit = new Octokit({userAgent:'Midnight Laundry'});
     const stuff = await octokit.repos.getContents({
       owner:"Brymo",
       repo:"bry",
@@ -111,7 +111,7 @@ class App extends Component {
 
     if(loading){
       return(
-      <div style={{ textAlign: "center" }}>
+      <div style={{ display:"flex", justifyContent:"center", alignItems:"center", height:"100%" }}>
         <Spin size="large" />
       </div>)
     }
