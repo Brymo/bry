@@ -15,6 +15,7 @@ class App extends Component {
   }
 
   componentWillMount() {
+    this.grabAllFiles();
     (async () => {
       const folderNames = ["About Me", "Cooked", "Places", "Code"];
       let newestPost = { newestName: null, newestDate: -1 };
@@ -72,7 +73,7 @@ class App extends Component {
     const stuff = await octokit.repos.getContents({
       owner: "Brymo",
       repo: "bry",
-      path: `./src/blogs/${folderName}/${folderName}${index}.md`
+      path: `./src/blogs/${folderName}${index}.md`
     });
     const content = await Buffer.from(stuff.data.content, "Base64").toString();
     return content;
@@ -103,6 +104,21 @@ class App extends Component {
     const date = await this.getDate(grabbedText);
     return date;
   };
+
+  grabAllFiles =  async () => {
+    const Octokit = require("@octokit/rest");
+    const octokit = new Octokit({
+      userAgent: "octokit/rest.js v16.25.0",
+      auth: "99eece022093681ddd1f31f2e2cf341bdd5061a2"
+    });
+    const stuff = await octokit.repos.getContents({
+      owner: "Brymo",
+      repo: "bry",
+      path: `./src/blogs/`
+    });
+    
+    console.log(stuff);
+  }
 
   render() {
     //const {caption} = this.state;

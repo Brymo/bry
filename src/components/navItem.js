@@ -62,7 +62,7 @@ class NavItem extends Component {
     const stuff = await octokit.repos.getContents({
       owner:"Brymo",
       repo:"bry",
-      path:`./src/blogs/${category}/${category}${index}.md`
+      path:`./src/blogs/${category}${index}.md`
     })
     const content = await Buffer.from(stuff.data.content,'Base64').toString();
     return content;
