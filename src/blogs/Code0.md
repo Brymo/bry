@@ -22,5 +22,5 @@ Once the window size drops below a certain width the app gets an extra css class
 }
 ~~~~
 
-I'm a bit of a newbie at this so theres probably a better way to do this but hey it works.  Send me an email if you have a better idea :)
+I'm a bit of a newbie at this so there's probably a better way to do this but hey it works.  Send me an email if you have a better idea :)
 
