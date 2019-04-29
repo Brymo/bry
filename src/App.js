@@ -19,6 +19,12 @@ class App extends Component {
 
   componentWillMount() {
 
+    if (window.innerWidth< 1000){
+      this.setMobile(true);
+    }else{
+      this.setMobile(false);
+    }
+
     window.addEventListener('resize', () => {
       if (window.innerWidth< 1000){
         this.setMobile(true);
@@ -56,7 +62,6 @@ class App extends Component {
         while(true){
           try{
             const blogPost = await this.grabFile(fileIterator,folderNames[nameIterator]);
-            console.log(blogPost);
             allFiles[folderNames[nameIterator]].push(blogPost);
             fileIterator++;
           }catch(e){
@@ -79,7 +84,6 @@ class App extends Component {
       while (i < folderNames.length) {
         const dateString = await this.getLastPostDate(folderNames[i]);
         const dateValue = await this.dateToValue(dateString);
-        console.log("G "+ dateString);
         if (dateValue > newestPost.newestDate) {
           newestPost.newestName = folderNames[i];
           newestPost.newestDate = dateValue;
@@ -99,7 +103,6 @@ class App extends Component {
   getLastPostDate =  async (folderName) => {
 
     const {allFiles} = this.state;
-    let grabbedText = null;
 
     const folderSize = allFiles[folderName].length;
 

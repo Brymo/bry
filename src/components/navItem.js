@@ -28,17 +28,14 @@ class NavItem extends Component {
     this.startLoad();
 
     (async () => {
-      let readmePath = null;
       let i = 0;
       let fileExists = true;
       let allBlogs = [];
       const{files} = this.props;
       while (fileExists) {
-        console.log(i);
         try {
           const grabbedtext = files[i];
           const formattedText = await this.format(grabbedtext);
-          console.log(formattedText);
           allBlogs.push(formattedText);
           i++;
         } catch (e) {
