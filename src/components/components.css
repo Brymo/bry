@@ -31,6 +31,7 @@
     text-align: center;
 }
 
+
 .bigName{
     font-family: 'DAYROM';
     font-size: 8em;
@@ -85,7 +86,7 @@
 
 .navitem:hover{
     background:gold;
-    color: white;
+    color: white !important;
     
 }
 
@@ -136,7 +137,6 @@ sup{
 .button{
     margin-top: 0.25em;
     margin-left: 0.3em;
-
 }
 
 
