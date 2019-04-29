@@ -3,7 +3,7 @@ import "./components.css";
 import { Drawer, Spin } from "antd";
 import ReactMarkdown from "react-markdown";
 import DrawNav from "./draw_nav";
-import MobileContext from './MobileContext';
+import MobileContext from "./MobileContext";
 
 class NavItem extends Component {
   constructor(props) {
@@ -19,8 +19,14 @@ class NavItem extends Component {
   format = text => {
     const lines = text.split("\n");
     let regex = /\((.*)\)\s*$/g;
-    const title = lines[0].match(regex)[0].replace(/^\(/g,'').replace(/\)\s*$/g,'');
-    const date = lines[1].match(regex)[0].replace(/^\(/g,'').replace(/\)\s*$/g,'');
+    const title = lines[0]
+      .match(regex)[0]
+      .replace(/^\(/g, "")
+      .replace(/\)\s*$/g, "");
+    const date = lines[1]
+      .match(regex)[0]
+      .replace(/^\(/g, "")
+      .replace(/\)\s*$/g, "");
     return { title: title, date: date, text: text };
   };
 
@@ -31,11 +37,12 @@ class NavItem extends Component {
       let i = 0;
       let fileExists = true;
       let allBlogs = [];
-      const{files} = this.props;
+      const { files } = this.props;
       while (fileExists) {
         try {
           const grabbedtext = files[i];
           const formattedText = await this.format(grabbedtext);
+          console.dir(formattedText);
           allBlogs.push(formattedText);
           i++;
         } catch (e) {
@@ -44,18 +51,15 @@ class NavItem extends Component {
         }
       }
 
-      
-      this.setState({ terms: allBlogs,articleId:i-1 });
+      this.setState({ terms: allBlogs, articleId: i - 1 });
 
       this.stopLoad();
-
     })();
   }
 
-
   noArticles = () => {
-      this.setState({hasArticles:false});
-  }
+    this.setState({ hasArticles: false });
+  };
 
   startLoad = () => {
     this.setState({
@@ -118,20 +122,19 @@ class NavItem extends Component {
 
   render() {
     const { terms, articleId, loading } = this.state;
-    const {latestPost, drawTitle,category} = this.props;
+    const { latestPost, drawTitle, category } = this.props;
 
-    
     return (
       <div className="navItemContainer">
         <button className="smallName navitem" onClick={this.showDrawer}>
           {category}
-          {latestPost?<sup>new</sup>:""}
+          {latestPost ? <sup>new</sup> : ""}
         </button>
         <Drawer
           title={drawTitle}
           placement="left"
           closable={true}
-          width={this.context?"100%":"70%"}
+          width={this.context ? "100%" : "70%"}
           onClose={this.onClose}
           visible={this.state.visible}
         >
@@ -140,27 +143,29 @@ class NavItem extends Component {
               <Spin size="large" />
             </div>
           ) : (
-              
             <div className="blog">
               <DrawNav
                 prevNext={this.getPrevNext()}
                 nextArticle={this.nextArticle}
                 prevArticle={this.prevArticle}
               />
-              {articleId === 0 ?
-              (<div><div className="title">{terms[articleId].title}</div>
+              {articleId >= 0 ? (
+                <div>
+                  <div className="title">{terms[articleId].title}</div>
 
-              <div className="date">
-                <i>Written by Bryan Moh || {terms[articleId].date}</i>
-              </div>
-              <ReactMarkdown
-                source={terms[articleId].text}
-                className="blogtext"
-              />
-            </div>):"No articles yet!"}
+                  <div className="date">
+                    <i>Written by Bryan Moh || {terms[articleId].date}</i>
+                  </div>
+                  <ReactMarkdown
+                    source={terms[articleId].text}
+                    className="blogtext"
+                  />
+                </div>
+              ) : (
+                "No articles yet!"
+              )}
             </div>
           )}
-          
         </Drawer>
       </div>
     );
