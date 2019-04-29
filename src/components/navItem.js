@@ -3,6 +3,7 @@ import "./components.css";
 import { Drawer, Spin } from "antd";
 import ReactMarkdown from "react-markdown";
 import DrawNav from "./draw_nav";
+import MobileContext from './MobileContext';
 
 class NavItem extends Component {
   constructor(props) {
@@ -26,17 +27,16 @@ class NavItem extends Component {
   componentWillMount() {
     this.startLoad();
 
-
     (async () => {
       let readmePath = null;
       let i = 0;
       let fileExists = true;
       let allBlogs = [];
-
+      const{files} = this.props;
       while (fileExists) {
         console.log(i);
         try {
-          const grabbedtext = await this.grabFile(i);
+          const grabbedtext = files[i];
           const formattedText = await this.format(grabbedtext);
           console.log(formattedText);
           allBlogs.push(formattedText);
@@ -55,18 +55,6 @@ class NavItem extends Component {
     })();
   }
 
-  grabFile =  async (index) => {
-    const {category} = this.props;
-    const Octokit = require('@octokit/rest');
-    const octokit = new Octokit({userAgent:'Midnight Laundry'});
-    const stuff = await octokit.repos.getContents({
-      owner:"Brymo",
-      repo:"bry",
-      path:`./src/blogs/${category}${index}.md`
-    })
-    const content = await Buffer.from(stuff.data.content,'Base64').toString();
-    return content;
-  }
 
   noArticles = () => {
       this.setState({hasArticles:false});
@@ -129,9 +117,13 @@ class NavItem extends Component {
     return prevNext;
   };
 
+  static contextType = MobileContext;
+
   render() {
     const { terms, articleId, loading } = this.state;
     const {latestPost, drawTitle,category} = this.props;
+
+    
     return (
       <div className="navItemContainer">
         <button className="smallName navitem" onClick={this.showDrawer}>
@@ -142,7 +134,7 @@ class NavItem extends Component {
           title={drawTitle}
           placement="left"
           closable={true}
-          width="70%"
+          width={this.context?"100%":"70%"}
           onClose={this.onClose}
           visible={this.state.visible}
         >
@@ -178,4 +170,5 @@ class NavItem extends Component {
   }
 }
 
+NavItem.contextType = MobileContext;
 export default NavItem;
