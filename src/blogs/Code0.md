@@ -1,5 +1,5 @@
 [//]: # (Implementing Mobile Rescaling)
-[//]: # (29.4.19)
+[//]: # (29.4.2019)
 
 So I clearly wasn't thinking about how this website would look on mobile when I was prototyping it.  Heck I really should have but I was so focused on getting features for a PC version out that it wasn't really on my mind until well...
 
