@@ -84,7 +84,6 @@ class App extends Component {
       while (i < folderNames.length) {
         const dateString = await this.getLastPostDate(folderNames[i]);
         const dateValue = await this.dateToValue(dateString);
-        console.log(dateValue);
         if (dateValue > newestPost.newestDate) {
           newestPost.newestName = folderNames[i];
           newestPost.newestDate = dateValue;
