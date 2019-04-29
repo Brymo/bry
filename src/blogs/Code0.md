@@ -18,7 +18,7 @@ Once the window size drops below a certain width the app gets an extra css class
 }
 
 .mobile .componentName{
-    "stuff":"stuff"
+    stuff:"stuff"
 }
 ~~~~
 
