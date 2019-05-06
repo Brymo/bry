@@ -3,7 +3,7 @@
 
 So I clearly wasn't thinking about how this website would look on mobile when I was prototyping it.  Heck I really should have but I was so focused on getting features for a PC version out that it wasn't really on my mind until well...
 
-![bad](https://www.dropbox.com/s/g30uvm5lq5n1z9a/received_1086893521499536.jpeg?dl=1)
+![bad](http://d3ho76wtf3u3sm.cloudfront.net/sardined.jpg)
 
 Yeah...not the best.  Thanks *cough* friends *cough* for pointing this one out.
 

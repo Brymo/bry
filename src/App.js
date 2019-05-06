@@ -33,6 +33,14 @@ class App extends Component {
       }
     }, false);
 
+    window.addEventListener('blur', () => {
+      document.title = "Come back soon!"
+    });
+
+    window.addEventListener('focus', () => {
+      document.title = "Midnight Laundry."
+    });
+
     (async () => {
       /*const folderNames = ["About Me", "Cooked", "Places", "Code"];
       let newestPost = { newestName: null, newestDate: -1 };

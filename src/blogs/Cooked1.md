@@ -1,7 +1,7 @@
 [//]: # (Furikake)
 [//]: # (29.4.2019)
 
-![Rice and Furikake](https://www.dropbox.com/s/soypwgdbjrvxmfl/20190429_124833.jpg?dl=1)
+![Rice and Furikake](http://d3ho76wtf3u3sm.cloudfront.net/furikake.jpg)
 
 It is a dark, dark day when the pantry is out of instant ramen.  For some reason the japanese seem to have a knack for making convenient food taste good (I mean have you seen their 7/11s holy moly).  In any case, we were out of noodles so here's rice topped with furikake (brown + black granules) and bonito flakes (beige wispy ribbons) from Tsukiji fish market.
 

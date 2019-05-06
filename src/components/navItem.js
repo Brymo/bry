@@ -42,7 +42,6 @@ class NavItem extends Component {
         try {
           const grabbedtext = files[i];
           const formattedText = await this.format(grabbedtext);
-          console.dir(formattedText);
           allBlogs.push(formattedText);
           i++;
         } catch (e) {

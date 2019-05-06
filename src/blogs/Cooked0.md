@@ -1,7 +1,7 @@
 [//]: # (Fishbowls Mr X.)
 [//]: # (1.4.2019)
 
-![Salad](https://www.dropbox.com/s/v2mlb5p6bayygti/mrx.jpg?dl=1)
+![Salad](http://d3ho76wtf3u3sm.cloudfront.net/mrx.jpg)
 
 This aesthetic bowl of poke salad goodness makes me so flippin happy.
 
