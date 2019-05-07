@@ -176,6 +176,11 @@ sup{
   
 }
 
+.drawTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @font-face {
     font-family: 'Coolvetica';
